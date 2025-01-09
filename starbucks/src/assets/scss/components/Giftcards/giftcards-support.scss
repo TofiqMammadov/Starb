@@ -1,0 +1,42 @@
+.giftcards-support {
+  background-color: #edebe9;
+  .giftcards-container {
+    .giftcards-support-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 15px;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      h4 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 13px;
+      }
+      p {
+        font-size: 1.1rem;
+        max-width: 400px;
+      }
+      .giftcards-support-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button {
+          background: none;
+          border-radius: 50px;
+          border-style: solid;
+          border-width: 1px;
+          display: inline-block;
+          font-weight: 600;
+          line-height: 1.2;
+          padding: 7px 16px;
+          text-align: center;
+          -webkit-text-decoration: none;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+}

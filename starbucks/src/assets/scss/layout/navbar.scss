@@ -1,0 +1,100 @@
+.header {
+  width: 100%;
+  height: 101px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  position: relative;
+  z-index: 9999999999999999999;
+  .container {
+    .navBar {
+      width: 100%;
+      height: 101px;
+      @include flex(space-between, center);
+      .logo {
+        width: 100%;
+        height: 100%;
+        padding-right: 40px;
+        img {
+          width: 51px;
+          height: 51px;
+        }
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 6px;
+      }
+    }
+  }
+}
+
+.active {
+  box-shadow: inset 0 -6px #00754a;
+}
+// Media query
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    z-index: 9999999 !important;
+    margin: 0 auto !important  ;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+      0 0 2px rgb(0 0 0 / 7%) !important;
+    .container {
+      .navBar {
+        width: auto !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex-direction: column;
+        // padding-left: 14px;
+        // padding-right: 14px;
+        margin: 0 auto;
+        @include flex(space-between, center);
+        .logo {
+          width: 100%;
+          height: 100%;
+          padding-right: 0px !important;
+          img {
+            width: 51px;
+            height: 51px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .active {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .header {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+      0 0 2px rgb(0 0 0 / 7%);
+    position: relative;
+    z-index: 9999999999999999999;
+    .container {
+      .navBar {
+        width: 100%;
+        height: 70px;
+        .logo {
+          width: 100%;
+          height: 100%;
+          padding-right: 40px;
+          img {
+            width: 34px;
+            height: 34px;
+          }
+        }
+      }
+    }
+  }
+}

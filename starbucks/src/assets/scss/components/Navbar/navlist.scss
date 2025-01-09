@@ -1,0 +1,43 @@
+.navList {
+  @include flex(center, center);
+  .navItem {
+    text-transform: uppercase;
+    @include font(14px, 10px, 700);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    &:nth-child(2) {
+      padding: 0px 0px;
+    }
+    &:nth-child(3) {
+      padding: 0px 0px 0px 24px;
+    }
+    &:nth-child(4) {
+      padding: 0px 0px 0px 24px;
+    }
+    a {
+      color: $linkColor;
+      padding: 43px 0px;
+      white-space: pre-wrap;
+      transition: 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+  }
+}
+
+// Media query
+@media only screen and (max-width: 600px) {
+  .navList {
+    .logo {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .navItem {
+      display: none !important;
+    }
+  }
+}

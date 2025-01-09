@@ -1,0 +1,52 @@
+.giftcards-bulk {
+  width: 100%;
+  background-color: #f9f9f9;
+  .giftcards-container {
+    .bulk-wrapper {
+      padding-right: 4rem;
+      padding-bottom: 3.5rem !important;
+      padding-top: 3.5rem !important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      img {
+        max-width: 375px;
+        width: 100%;
+      }
+      .bulk-content {
+        max-width: 375px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 23px;
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        p {
+          color: rgba(0, 0, 0, 0.58);
+        }
+        button {
+          background: none;
+          border-radius: 50px;
+          border-style: solid;
+          border-width: 1px;
+          display: inline-block;
+          font-weight: 600;
+          line-height: 1.2;
+          padding: 7px 16px;
+          text-align: center;
+          -webkit-text-decoration: none;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          &:hover {
+            background-color: #cfcecec9;
+          }
+        }
+      }
+    }
+  }
+}

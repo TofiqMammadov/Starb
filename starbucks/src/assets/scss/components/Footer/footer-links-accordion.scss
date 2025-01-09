@@ -1,0 +1,40 @@
+.footer-links-accordion {
+  width: 100% !important;
+  transition: all 0.5s ease-in-out;
+  .links-header {
+    transition: all 0.5s ease-in-out;
+    ::selection {
+      background: rgba(240, 248, 255, 0);
+    }
+    h1 {
+      color: black;
+    }
+  }
+  .accordion-link {
+    ::selection {
+      background: rgba(240, 248, 255, 0);
+    }
+    transition: all 0.5s ease-in-out;
+    span {
+      color: black;
+    }
+  }
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none;
+  }
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+    display: none !important;
+  }
+}
+// Media query
+@media only screen and (min-width: 600px) {
+  .footer-links-accordion {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-links-accordion {
+    display: block !important;
+  }
+}

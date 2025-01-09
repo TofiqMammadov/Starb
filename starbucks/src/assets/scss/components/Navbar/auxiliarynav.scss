@@ -1,0 +1,105 @@
+.auxiliaryNav-btn {
+  display: inline-block;
+  background: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(145, 127, 127, 0.06);
+  }
+}
+.join-now-btn {
+  background: $blackColor;
+  color: $whiteColor;
+  margin-left: 18px;
+  &:hover {
+    background: $blackColor;
+  }
+}
+.auxiliaryNav-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .user-icon {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 3px solid #00754a;
+    color: #00754a;
+    padding: 1px;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+      font-size: 13px;
+      color: #00754a;
+      font-weight: 700;
+    }
+  }
+  .log-out-btn {
+    color: #00754a;
+    border: 2px solid #00754a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    .log-out-icon {
+      font-size: 17px;
+    }
+    &:hover {
+      background-color: #00754a2b;
+      scale: (0.97);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .auxiliaryNav {
+    display: none !important;
+  }
+  .log-out-btn {
+    display: none !important;
+  }
+}
+// Media query
+@media only screen and (max-width: 380px) {
+  .auxiliaryNav-btn {
+    border-radius: 50px;
+    padding: 6px 10px;
+  }
+  .join-now-btn {
+    margin-left: 18px;
+    &:hover {
+      background: $blackColor;
+    }
+  }
+  .auxiliaryNav-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .user-icon {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}

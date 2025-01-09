@@ -1,0 +1,10 @@
+.MuiSnackbar-root {
+  position: fixed !important;
+  bottom: 112px !important;
+  left: 0;
+  right: 0;
+  z-index: 9999999999999999999999;
+}
+.MuiSnackbarContent-root {
+  background-color: transparent !important;
+}

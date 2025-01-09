@@ -1,0 +1,67 @@
+.footer-link-lists {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2%;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .footer-link-title {
+    color: rgba(0, 0, 0, 0.786);
+    margin-bottom: 20%;
+    font-weight: 500;
+    font-size: 19px;
+  }
+  a {
+    color: rgba(0, 0, 0, 0.58);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: black;
+      transition: 0.1s ease-in-out;
+    }
+  }
+  .footer-list-about-us {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-list-career {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-list-social-impact {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-list-business-partners {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-list-order-pickup {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+// Media query
+@media only screen and (max-width: 600px) {
+  .footer-link-lists {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-link-lists {
+    display: none !important;
+  }
+}

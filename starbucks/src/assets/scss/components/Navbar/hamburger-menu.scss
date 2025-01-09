@@ -1,0 +1,110 @@
+.auxiliary {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .hamburger-icon.open {
+    // transform: rotate(90deg);
+    color: black;
+  }
+  .menu-items {
+    visibility: hidden !important;
+    display: none !important;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 500px;
+    height: 100vh;
+    z-index: -99999999999;
+    background-color: white;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    transform: translateX(100vw);
+    ::after {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      bottom: 0;
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: -9999;
+      background-color: rgba(0, 0, 0, 0.116);
+    }
+  }
+  .menu-items.open {
+    transform: translateX(0);
+
+    transition: left 0.5s ease-in-out;
+    visibility: visible !important;
+    display: block !important;
+    position: fixed;
+    width: 500px;
+    height: 100vh;
+    left: 90px;
+    z-index: -999999999999909999999999;
+  }
+  .burgerMenuList {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    .burgerMenuItem {
+      width: 60%;
+      padding: 16px 32px;
+      font-weight: 600;
+      &:nth-child(3) {
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .burgerAuxiliaryNav {
+    margin-top: 30px;
+    padding: 0px 24px;
+  }
+}
+// Media query
+@media only screen and (min-width: 600px) {
+  .hamburger-menu {
+    display: none !important;
+  }
+  .menu-items {
+    display: none !important;
+  }
+  .menu-items.open {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .hamburger-icon {
+    svg {
+      width: 23px !important;
+      height: 23px !important;
+    }
+  }
+}

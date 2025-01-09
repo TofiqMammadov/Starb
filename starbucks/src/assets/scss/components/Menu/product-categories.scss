@@ -1,0 +1,32 @@
+.product-categories {
+  width: 40%;
+  .product-categories-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    .categories-item {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      span {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+a {
+  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.58);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+// Media query
+@media only screen and (max-width: 600px), (max-width: 1200px) {
+  .product-categories {
+    display: none !important;
+  }
+}

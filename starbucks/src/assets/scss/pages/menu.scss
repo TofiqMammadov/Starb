@@ -1,0 +1,18 @@
+.menu {
+  margin-bottom: 80px;
+  .container {
+    .menu-wrap {
+      padding-left: 90px;
+      padding-right: 90px;
+      display: flex;
+    }
+  }
+}
+// Media query
+@media only screen and (max-width: 600px) {
+  .menu-wrap {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    display: flex;
+  }
+}

@@ -1,0 +1,60 @@
+// Reset
+@import "./base/reset.scss";
+
+// Varibles
+@import "./utils/varibles.scss";
+
+// Mixin
+@import "./utils/mixin.scss";
+
+// Navbar
+@import "./layout/navbar.scss";
+@import "./components/Navbar/navlist.scss";
+@import "./components/Navbar/auxiliarynav.scss";
+@import "./components/Navbar/hamburger-menu.scss";
+// Home
+@import "./pages/home.scss";
+@import "./components/Home/cards.scss";
+
+//Menu
+@import "./components/Menu/subnav.scss";
+@import "./pages/menu.scss";
+@import "./components/Menu/product-categories.scss";
+@import "./components/Menu/menuproduct.scss";
+@import "./components/Menu/bottomdrawer.scss";
+@import "./pages/product.scss";
+
+// Rewards
+@import "./components/Rewards/rewards-banner.scss";
+@import "./components/Rewards/reward-hero.scss";
+
+// Giftcards
+@import "./pages/giftcards.scss";
+@import "./components/Giftcards/giftcards-all-swiper.scss";
+@import "./components/Giftcards/ribbon-giftcards.scss";
+@import "./components/Giftcards/giftcards-spring.scss";
+@import "./components/Giftcards/giftcards-bulk.scss";
+@import "./components/Giftcards/giftcards-support.scss";
+//Sign up
+@import "./pages/sign-up-form.scss";
+@import "./pages/sign-in-form.scss";
+// Error
+@import "./pages/error.scss";
+
+//Snackbar
+@import "./components/Snackbar/snackbar.scss";
+// Cart
+@import "./pages/Cart.scss";
+@import "./components/Cart/cartnav.scss";
+@import "./components/Cart/cart-product.scss";
+@import "./components/Cart/choose-store.scss";
+@import "./components/Cart/pickup-options.scss";
+// Shop
+@import "./components/Shop/coffeeoptional.scss";
+//Footer
+@import "./layout/footer.scss";
+@import "./components/Footer/footerlinks.scss";
+@import "./components/Footer/footer-links-accordion.scss";
+@import "./components/Footer/footersecondarylinks.scss";
+@import "./components/Footer/footersocial.scss";
+@import "./components/Footer/copyright.scss";
