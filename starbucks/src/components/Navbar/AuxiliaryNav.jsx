@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { HiUser } from "react-icons/hi";
 import { MdLogout } from "react-icons/md";
+import { IoLocationSharp } from 'react-icons/io5';
 
 const AuxiliaryNav = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -19,32 +20,36 @@ const AuxiliaryNav = () => {
     }
   }, []);
   return (
-    <div className="auxiliary">
-      {isLoggedIn ? (
-        <div className="auxiliaryNav-user">
-          <div className="icon">
-            <HiUser className="user-icon" />
-            <span>{name}</span>
+    <>
+      <div className="auxiliary">
+        {isLoggedIn ? (
+          <div className="auxiliaryNav-user">
+            <div className="icon">
+              <HiUser className="user-icon" />
+              <span>{name}</span>
+            </div>
+            <button className="log-out-btn" onClick={handleLogOut}>
+              Log out <MdLogout className="log-out-icon" />
+            </button>
           </div>
-          <button className="log-out-btn" onClick={handleLogOut}>
-            Log out <MdLogout className="log-out-icon" />
-          </button>
-        </div>
-      ) : (
-        <div className="auxiliaryNav">
-          <div className="auxiliaryNav-item">
-            <Link to={"/signin"}>
-              <button className="sign-in-btn auxiliaryNav-btn">Sign in</button>
+        ) : (
+          <div className="auxiliaryNav">
+            <Link to={'/location'} className='auxiliaryNav-location'>
+              <IoLocationSharp />
+              Find a store
             </Link>
-            <Link to={"/signup"}>
-              <button className="join-now-btn auxiliaryNav-btn">
-                Join Now
-              </button>
-            </Link>
+            <div className="auxiliaryNav-item">
+              <Link to={"/signin"}>
+                <button className="sign-in-btn auxiliaryNav-btn">Sign in</button>
+              </Link>
+              <Link to={"/signup"}>
+                <button className="join-now-btn auxiliaryNav-btn">Join Now</button>
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 
