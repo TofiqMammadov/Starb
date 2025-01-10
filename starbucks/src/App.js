@@ -19,6 +19,7 @@ import Cart from "./pages/Cart";
 import { Loading } from "./utils/loading";
 // cartContext
 import { CartProvider } from "./context/cartContext";
+import Location from "./pages/Location";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")));
@@ -31,6 +32,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
+            <Route path="/location" element={<Location />} />
             <Route path="/shop/:cardID" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/rewards" element={<Rewards />} />
