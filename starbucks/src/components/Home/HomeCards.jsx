@@ -11,7 +11,7 @@ const HomeCards = () => {
             <div className="card-contents">
               <h2 className="card-title">{item.title}</h2>
               <p className="card-content">{item.content}</p>
-              <Link to={"/menu"}>
+              <Link to={item.btnTo}>
                 <button className="home-card-btn">{item.btnContent}</button>
               </Link>
             </div>

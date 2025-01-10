@@ -26,14 +26,12 @@
       margin-top: 5%;
       cursor: pointer;
       &:hover {
-        background-color: rgba(0, 0, 0, 0.148);
+        background-color: #bdd5a8;
       }
     }
     &:nth-child(1) {
       display: flex;
-      flex-direction: row-reverse;
-      background-color: $HomeCard1Color;
-      color: $HomeCard1TitleColor;
+      background-color: $HomeCardColor;
       text-align: center;
       letter-spacing: -0.01em;
       .card-contents {
@@ -46,23 +44,24 @@
         gap: 1rem;
         padding: 8%;
         .card-title {
-          @include font(1.4rem, 1.5, 600);
-          color: white;
+          @include font(3.5rem, 1.5, 600);
+          color: #1d3c34;
         }
         .card-content {
-          @include font(1.1rem, 1.5, 500);
-          color: white;
+          @include font(1.5rem, 1.5, 500);
+          color: #1d3c34;
           line-height: 1.7;
         }
         .home-card-btn {
-          color: $whiteColor;
-          border-color: $whiteColor;
+          color: #1d3c34;
+          border-color: #1d3c34;
         }
       }
     }
     &:nth-child(2) {
-      background-color: $HomeCard2Color;
+      background-color: $HomeCardColor;
       text-align: center;
+      flex-direction: row-reverse;
       .card-contents {
         display: flex;
         align-items: center;
@@ -73,27 +72,26 @@
         gap: 1rem;
         .card-title {
           font-weight: 600;
-          font-size: 50px;
+          font-size: 3.5rem;
           letter-spacing: 2px;
-          color: #1e3932;
+          color: #1d3c34;
         }
         .card-content {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 600;
-          color: #1e3932;
+          color: #1d3c34;
           line-height: 1.5;
           letter-spacing: -0.01em;
         }
         .home-card-btn {
-          color: #1e3932;
-          border-color: #1e3932;
+          color: #1d3c34;
+          border-color: #1d3c34;
         }
       }
     }
     &:nth-child(3) {
       display: flex;
-      flex-direction: row-reverse;
-      background-color: $HomeCard3Color;
+      background-color: $HomeCardColor;
       text-align: center;
       .card-contents {
         width: 50%;
@@ -105,52 +103,21 @@
         padding: 8%;
         .card-title {
           font-weight: 600;
-          font-size: 50px;
+          font-size: 3.5rem;
           letter-spacing: 2px;
-          color: #1e3932;
+          color: #1d3c34;
         }
 
         .card-content {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 500;
-          color: #1e3932;
+          color: #1d3c34;
           line-height: 1.5;
           letter-spacing: -0.01em;
         }
         .home-card-btn {
-          color: $blackColor;
-          border-color: $blackColor;
-        }
-      }
-    }
-    &:nth-child(4) {
-      background-color: $HomeCard4Color;
-      text-align: center;
-      .card-contents {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 8%;
-        .card-title {
-          font-weight: 600;
-          font-size: 50px;
-          letter-spacing: 2px;
-          color: #1e3932;
-        }
-
-        .card-content {
-          font-size: 24px;
-          font-weight: 500;
-          color: #1e3932;
-          line-height: 1.5;
-          letter-spacing: -0.01em;
-        }
-        .home-card-btn {
-          color: #1e3932;
-          border-color: #1e3932;
+          color: #1d3c34;
+          border-color: #1d3c34;
         }
       }
     }
@@ -166,15 +133,6 @@
   padding-top: 80px;
   padding-bottom: 80px;
   color: $blackColor;
-
-  a {
-    color: $blackColor;
-    text-decoration: underline;
-    padding-left: 0.6%;
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
 // Media query
 @media only screen and (max-width: 600px) {

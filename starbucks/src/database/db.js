@@ -2,41 +2,35 @@
 import homeCardImg1 from "../assets/images/home-card-1.jpg";
 import homeCardImg2 from "../assets/images/home-card-2.jpg";
 import homeCardImg3 from "../assets/images/home-card-3.png";
-import homeCardImg4 from "../assets/images/home-card-4.jpg";
 
 // Home Cards Data
 const homeCards = [
   {
     id: 1,
-    title: "More sips, more trips",
+    title: "The best of winter",
     content:
-      "Join Starbucks® Rewards and link your Delta SkyMiles® account by 3/31 to earn 200 Stars, 500 miles—or both!*",
+      "A new winter menu is here, featuring new Cortado alongside Pistachio beverages and Matcha Latte—now customized to your perfect level of sweetness.",
     cardImg: homeCardImg1,
-    btnContent: "Join + Link",
+    btnContent: "Add to order",
+    btnTo: "menu/featured"
   },
   {
     id: 2,
-    title: "Nitro your way",
+    title: "From the birthplace of coffee",
     content:
-      "Try the new Cinnamon Caramel Cream Nitro Cold Brew or go for the Vanilla Sweet Cream Nitro Cold Brew.",
+      "With distinctive floral, tangerine and lemon balm notes, Single-Origin Ethiopia is a unique global favorite.",
     cardImg: homeCardImg2,
-    btnContent: "Order now",
+    btnContent: "Add to order",
+    btnTo: "menu"
   },
   {
     id: 3,
-    title: "Carefree and cool",
+    title: "Your free coffee awaits",
     content:
-      "Our Pink Drink Starbucks Refreshers® beverage with real strawberry pieces and coconutmilk is a spring-inspired delight.",
+      "Unlock Rewards from the very first sip, starting with a free handcrafted drink with qualifying purchase during your first week.*",
     cardImg: homeCardImg3,
-    btnContent: "Order now",
-  },
-  {
-    id: 4,
-    title: "Hearty on the go",
-    content:
-      "Grab a deliciously filling Double-Smoked Bacon, Cheddar & Egg Sandwich or Bacon & Gruyère Egg Bites.",
-    cardImg: homeCardImg4,
-    btnContent: "Order now",
+    btnContent: "Join now",
+    btnTo: "account/create"
   },
 ];
 
