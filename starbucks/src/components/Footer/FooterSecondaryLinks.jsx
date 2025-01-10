@@ -15,6 +15,14 @@ const FooterSecondaryLinks = () => {
         <li className="footer-secondary-link">
           <Link
             target={"_blank"}
+            to={"https://www.starbucks.com/terms/privacy-notice/"}
+          >
+            Consumer Health Privacy Notice
+          </Link>
+        </li>
+        <li className="footer-secondary-link">
+          <Link
+            target={"_blank"}
             to={"https://www.starbucks.com/terms/starbucks-terms-of-use/"}
           >
             Terms of Use

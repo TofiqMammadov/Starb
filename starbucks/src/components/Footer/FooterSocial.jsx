@@ -30,7 +30,7 @@ const FooterSocial = () => {
           </Link>
         </li>
         <li className="footer-social-link">
-          <Link target={"_blank"} to={"https://www.instagram.com/starbucks/"}>
+          <Link target={"_blank"} to={"https://www.instagram.com/starbucks"}>
             <FaInstagram />
           </Link>
         </li>
@@ -40,7 +40,7 @@ const FooterSocial = () => {
           </Link>
         </li>
         <li className="footer-social-link">
-          <Link target={"_blank"} to={"https://twitter.com/starbucks/"}>
+          <Link target={"_blank"} to={"https://x.com/starbucks/"}>
             <FaTwitter />
           </Link>
         </li>

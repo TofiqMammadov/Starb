@@ -20,22 +20,25 @@ function FooterLinksAccordion(props) {
         <AccordionDetails>
           <ul className="footer-list-about-us">
             <li className="footer-link">
-              <Link to={"/menu"}>Our Company</Link>
+              <Link to={"https://www.starbucks.com/about-us/"}>Our Company</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Our Coffee</Link>
+              <Link to={"https://www.starbucks.com/coffee/"}>Our Coffee</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Stories and News</Link>
+              <Link to={"https://about.starbucks.com/"}>About Starbucks</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Starbucks Archive</Link>
+              <Link to={"https://archive.starbucks.com/"}>Starbucks Archive</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Investor Relations</Link>
+              <Link to={"https://investor.starbucks.com/ir-home/default.aspx"}>Investor Relations</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Customer Service</Link>
+              <Link to={"https://customerservice.starbucks.com/sbux"}>Customer Service</Link>
+            </li>
+            <li className="footer-link">
+              <Link to={"https://www.starbucks.com/contact/"}>Contact us</Link>
             </li>
           </ul>
         </AccordionDetails>
@@ -51,22 +54,22 @@ function FooterLinksAccordion(props) {
         <AccordionDetails>
           <ul className="footer-list-career">
             <li className="footer-link">
-              <Link to={"/menu"}>Culture and Values</Link>
+              <Link to={"https://careers.starbucks.com/culture/"}>Culture and Values</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Inclusion, Diversity, and Equity</Link>
+              <Link to={"https://about.starbucks.com/inclusion-diversity-belonging/"}>Inclusion, Diversity, and Equity</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>College Achievement Plan</Link>
+              <Link to={"https://careers.starbucks.com/benefits/education/"}>College Achievement Plan</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Alumni Community</Link>
+              <Link to={"https://alumni.starbucks.com/login/"}>Alumni Community</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>U.S. Careers</Link>
+              <Link to={"https://careers.starbucks.com/"}>U.S. Careers</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>International Careers</Link>
+              <Link to={"https://careers.starbucks.com/discover-opportunities/international-careers/"}>International Careers</Link>
             </li>
           </ul>
         </AccordionDetails>
@@ -82,13 +85,16 @@ function FooterLinksAccordion(props) {
         <AccordionDetails>
           <ul className="footer-list-social-impact">
             <li className="footer-link-career">
-              <Link to={"/menu"}>People</Link>
+              <Link to={"https://about.starbucks.com/communities/"}>Communities</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Planet</Link>
+              <Link to={"https://about.starbucks.com/the-starbucks-foundation/"}>Starbucks Foundation</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>
+              <Link to={"https://about.starbucks.com/sustainability/"}>Sustainability</Link>
+            </li>
+            <li className="footer-link">
+              <Link to={"https://www.starbucks.com/responsibility/reporting-hub/"}>
                 Environmental and Social Impact Reporting
               </Link>
             </li>
@@ -106,22 +112,16 @@ function FooterLinksAccordion(props) {
         <AccordionDetails>
           <ul className="footer-list-business-partners">
             <li className="footer-link">
-              <Link to={"/menu"}>Landlord Support Center</Link>
+              <Link to={"https://www.starbucks.com/business/landlord-faq/"}>Landlord Support Center</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Suppliers</Link>
+              <Link to={"https://www.starbucks.com/business/suppliers/"}>Suppliers</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Corporate Gift Card Sales</Link>
+              <Link to={"https://www.starbuckscardb2b.com/s/"} target={"_blank"}>Corporate Gift Card Sales</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Office and Foodservice Coffee</Link>
-            </li>
-            <li className="footer-link">
-              <Link to={"/menu"}>Investor Relations</Link>
-            </li>
-            <li className="footer-link">
-              <Link to={"/menu"}>Customer Service</Link>
+              <Link to={"https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks"}>Office and Foodservice Coffee</Link>
             </li>
           </ul>
         </AccordionDetails>
@@ -137,22 +137,19 @@ function FooterLinksAccordion(props) {
         <AccordionDetails>
           <ul className="footer-list-order-pickup">
             <li className="footer-link">
-              <Link to={"/menu"}>Order on the App</Link>
+              <Link to={"https://www.starbucks.com/rewards/mobile-apps/"}>Order on the App</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Order on the Web</Link>
+              <Link to={"/menu"} target={"_top"}>Order on the Web</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Delivery</Link>
+              <Link to={"https://www.starbucks.com/stores-and-ordering/delivery/"} target={"_blank"}>Delivery</Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Order and Pickup Options </Link>
+              <Link to={"https://www.starbucks.com/stores-and-ordering/"}>Order and Pickup Options </Link>
             </li>
             <li className="footer-link">
-              <Link to={"/menu"}>Explore and Find Coffee for Home</Link>
-            </li>
-            <li className="footer-link">
-              <Link to={"/menu"}>Customer Service</Link>
+              <Link to={"https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer"} target={"_blank"}>Explore and Find Coffee for Home</Link>
             </li>
           </ul>
         </AccordionDetails>

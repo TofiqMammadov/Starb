@@ -2,13 +2,12 @@
   margin-bottom: 20px;
   .footer-secondary-list {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 
     .footer-secondary-link {
-      border-right: 1px solid rgba(0, 0, 0, 0.58);
       &:nth-last-child(1) {
         border: none;
       }
