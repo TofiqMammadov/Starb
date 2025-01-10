@@ -24,8 +24,7 @@
 .auxiliaryNav-btn {
   display: inline-block;
   background: none;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid black;
   border-radius: 50px;
   padding: 7px 16px;
   font-weight: 600;
@@ -33,6 +32,7 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease;
+  color: black;
   cursor: pointer;
   &:hover {
     background-color: rgba(145, 127, 127, 0.06);
