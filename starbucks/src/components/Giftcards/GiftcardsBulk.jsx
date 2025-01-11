@@ -1,6 +1,8 @@
 import React from "react";
 // Image
 import BulkImg from "../../assets/images/bulk-gift-cards.png";
+import { Link } from "react-router-dom";
+import { BiLinkExternal } from "react-icons/bi";
 const GiftcardsBulk = () => {
   return (
     <section className="giftcards-bulk">
@@ -8,13 +10,16 @@ const GiftcardsBulk = () => {
         <div className="bulk-wrapper">
           <img src={BulkImg} alt="bulk-img" />
           <div className="bulk-content">
-            <h3>Gift Cards in Bulk</h3>
+            <h3>Business gifting — simplified</h3>
             <p>
-              There’s an easier way to buy Starbucks Cards in bulk! Give a
-              Starbucks Card to gift, reward, incentivize, or show appreciation
-              towards your customers, clients and team members.
+              Bulk send physical or digital Starbucks Cards to gift, reward, incentivize,
+              or show appreciation towards your customers, clients and team members.
+              Minimum 15 cards per order.
             </p>
-            <button>Shop now</button>
+            
+            <Link to={"https://www.starbuckscardb2b.com/s/"} target="_blank">
+              Shop now <BiLinkExternal />{" "}
+            </Link>
           </div>
         </div>
       </div>

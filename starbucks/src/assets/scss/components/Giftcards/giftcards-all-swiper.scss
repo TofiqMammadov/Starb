@@ -1,63 +1,76 @@
-.giftcards-title {
-  text-transform: uppercase;
-  font-size: 15px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+.giftcards-container {
+  overflow: hidden; // Prevents bottom scrolling
 
-.giftcards-swiper {
-  img {
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 3.3333%/5.298%;
-    max-width: 290px;
-    max-height: 186px;
-    min-width: 116px;
-    min-height: 73px;
+  .giftcards-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
   }
-  .swiper-slide {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+
+  .giftcards-swiper {
+    position: relative;
+
+    img {
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.14);
+      border-radius: 3.3333% / 5.298%;
+      max-width: 290px;
+      max-height: 186px;
+      min-width: 116px;
+      min-height: 73px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img:hover {
+        transform: translateY(-10px); // Lift the card on hover
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); // Add shadow
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 70%; // Center vertically
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      color: gray;
+      font-size: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); // Add slight shadow
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+
+      &.swiper-button-prev {
+        left: 10px; // Align on the left
+      }
+
+      &.swiper-button-next {
+        right: 10px; // Align on the right
+      }
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      transition: transform 0.3s ease; // Smooth card switching
+    }
   }
-}
-.swiper-wrapper {
-  border-radius: 100%;
-}
-.swiper-button-prev {
-  width: 40px !important;
-  height: 40px !important;
-  background-color: white;
-  background-size: 10px;
-  border-radius: 100%;
-  right: 70px !important;
-  color: gray;
-  font-size: 12px !important ;
-  --swiper-theme-color: gray;
-  transition: all 0.3s ease-in-out;
-  &:active {
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(128, 128, 128, 0.71);
-    --swiper-theme-color: white;
+
+  // Disable navigation buttons when at the beginning or end
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
-}
-.swiper-button-next {
-  width: 40px !important;
-  left: 140px !important;
-  height: 40px !important;
-  background-color: white;
-  border-radius: 50% !important;
-  color: gray;
-  font-size: 13px !important ;
-  --swiper-theme-color: gray;
-  transition: all 0.3s ease-in-out;
-  &:active {
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(128, 128, 128, 0.71);
-    --swiper-theme-color: white;
-  }
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px !important;
 }

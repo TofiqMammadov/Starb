@@ -8,7 +8,7 @@ const RewardsHero = () => {
         <Link to={"/signup"}>
           <button>Join now</button>
         </Link>
-        <span>Or join in the app for the best experience</span>
+        <span>Or <Link to={"https://www.starbucks.com/rewards/mobile-apps/"}>join in the app</Link> for the best experience</span>
       </div>
     </div>
   );

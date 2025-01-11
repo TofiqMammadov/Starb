@@ -12,11 +12,13 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
+      h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
       button {
-        background: none;
+        border: 1px solid black;
         border-radius: 50px;
-        border-style: solid;
-        border-width: 1px;
         display: inline-block;
         font-weight: 600;
         line-height: 1.2;
@@ -24,17 +26,18 @@
         text-align: center;
         text-decoration: none;
         transition: all 0.2s ease;
+        
+      }
+      .add-or-reload-btn{
         &:hover {
-          background-color: #000000;
-          color: white;
+          background-color: #bed1cb;
         }
       }
       .check-balance-btn {
         background: black;
         color: white;
         &:hover {
-          background: none;
-          color: black;
+          opacity: 80%;
         }
       }
       span {

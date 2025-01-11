@@ -1,0 +1,26 @@
+.giftcards-allcards {
+    margin-bottom: 40px;
+  
+    .giftcards-container {
+      .giftcards-allcards-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+        img {
+          width: 290px;
+          height: 185px;
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.14);
+          border-radius: 3.3333%/5.298%;
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+  
+        img:hover {
+          transform: translateY(-10px); // Lift the card on hover
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); // Add shadow
+        }
+      }
+    }
+  }
