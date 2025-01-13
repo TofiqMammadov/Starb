@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 // Style
 import "./assets/scss/style.scss";
@@ -20,6 +20,11 @@ import { Loading } from "./utils/loading";
 // cartContext
 import { CartProvider } from "./context/cartContext";
 import Location from "./pages/Location";
+import Previous from "./pages/Previous";
+import MenuProduct from "./components/Menu/MenuProduct";
+import ProductCategories from "./components/Menu/ProductCategories";
+import Featured from "./pages/Featured";
+import Favorites from "./pages/Favorites";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")));
@@ -28,23 +33,29 @@ const App = () => {
     <div className="app">
       <Loading>
         <CartProvider>
-          {location.pathname !== "/cart" && <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}  />}
+          {location.pathname !== "/cart" && <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/menu" element={<Menu />} />
+            <Route path="/menu" element={<Menu />}>
+              <Route path="/menu" element={<ProductCategories />} />
+              <Route path="/menu" element={<MenuProduct />} />
+              <Route path="featured" element={<Featured />} />
+              <Route path="previous" element={<Previous />} />
+              <Route path="favorites" element={<Favorites />} />
+            </Route>
             <Route path="/location" element={<Location />} />
             <Route path="/shop/:cardID" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/giftcards" element={<Giftcards />} />
-            <Route path="/signin" setLoggedIn={setLoggedIn}  element={<SignInForm />} />
-            <Route path="/signup"  setLoggedIn={setLoggedIn} element={<SignUpForm />} />
+            <Route path="/signin" setLoggedIn={setLoggedIn} element={<SignInForm />} />
+            <Route path="/signup" setLoggedIn={setLoggedIn} element={<SignUpForm />} />
             <Route path="*" element={<Error />} />
           </Routes>
           {location.pathname !== "/cart" && <Footer />}
         </CartProvider>
       </Loading>
-    </div>
+    </div >
   );
 };
 

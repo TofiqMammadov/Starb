@@ -1,0 +1,102 @@
+.previous-container {
+    padding: 30px 0;
+    max-width: 350px;
+
+    .previous-title {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .previous-subtitle {
+        font-weight: 600;
+        font-size: 30px;
+        word-wrap: break-word;
+        padding-bottom: 15px;
+    }
+
+    .previous-description {
+        font-size: 20px;
+        margin: 10px 0;
+        color: gray;
+    }
+
+    .previous-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+
+        .previous-button {
+            padding: 5px 20px;
+            border: 1px solid black;
+            border-radius: 9999px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &.sign-in {
+                background-color: transparent;
+                color: black;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+            &.join-now {
+                background-color: black;
+                color: white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .previous-subtitle {
+            font-size: 24px;
+        }
+
+        .previous-description {
+            font-size: 18px;
+        }
+
+        .previous-buttons {
+            gap: 8px;
+
+            .previous-button {
+                padding: 8px 15px;
+                font-size: 14px;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 20px;
+
+        .previous-title {
+            font-size: 20px;
+        }
+
+        .previous-subtitle {
+            font-size: 20px;
+        }
+
+        .previous-description {
+            font-size: 16px;
+        }
+
+        .previous-buttons {
+            .previous-button {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "color": "#1e3932",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96507.jpg",
+        "title": "Brown Sugar Oatmilk Shaken Espresso",
+        "text": "Starbucks® Blonde espresso is hand-shaken with brown sugar and cinnamon notes and then finished with oatmilk."
+      },
+      {
+        "id": 2,
+        "color": "#1e3932",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96508.jpg",
+        "title": "Brown Sugar Oatmilk Shaken Espresso",
+        "text": "Starbucks® Blonde espresso is hand-shaken with brown sugar and cinnamon notes and then finished with oatmilk."
+      },
+      {
+        "id": 3,
+        "color": "#cfe6b5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96523.jpg",
+        "title": "Paradise Drink Starbucks Refreshers® Beverage",
+        "text": "A tropical blend of real pineapple pieces, passionfruit accents and coconutmilk."
+      },
+      {
+        "id": 4,
+        "color": "#cfe6b5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96524.jpg",
+        "title": "Pink Drink Starbucks Refreshers® Beverage",
+        "text": "Flavors of passionfruit and açaí, real strawberry pieces and coconutmilk come together."
+      },
+      {
+        "id": 5,
+        "color": "#CFE6B5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96512.jpg",
+        "title": "New Cinnamon Caramel Cream Nitro Cold Brew",
+        "text": "Velvety Nitro Cold Brew, now with cinnamon and caramel notes and silky cold foam."
+      },
+      {
+        "id": 6,
+        "color": "#CFE6B5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96513.jpg",
+        "title": "Brown Sugar Oatmilk Shaken Espresso",
+        "text": "Starbucks® Blonde espresso is hand-shaken with brown sugar and cinnamon notes and then finished with oatmilk."
+      },
+      {
+        "id": 7,
+        "color": "#006241",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96518.jpg",
+        "title": "Impossible™ Breakfast Sandwich",
+        "text": "An Impossible™ Sausage Patty Made From Plants, a cage-free fried egg and Cheddar on a sesame ciabatta bun.*"
+      },
+      {
+        "id": 8,
+        "color": "#006241",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96519.jpg",
+        "title": "Kale & Mushroom Egg Bites",
+        "text": "Sous-vide style cage-free eggs with kale, portabella mushrooms and Monterey Jack cheese."
+      }
+    ]
+  }

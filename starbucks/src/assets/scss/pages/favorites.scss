@@ -1,0 +1,102 @@
+.favorites-container {
+    padding: 30px 0;
+    max-width: 350px;
+
+    .favorites-title {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .favorites-subtitle {
+        font-weight: 600;
+        font-size: 30px;
+        word-wrap: break-word;
+        padding-bottom: 15px;
+    }
+
+    .favorites-description {
+        font-size: 20px;
+        margin: 10px 0;
+        color: gray;
+    }
+
+    .favorites-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+
+        .favorites-button {
+            padding: 5px 20px;
+            border: 1px solid black;
+            border-radius: 9999px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &.sign-in {
+                background-color: transparent;
+                color: black;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+            &.join-now {
+                background-color: black;
+                color: white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .favorites-subtitle {
+            font-size: 24px;
+        }
+
+        .favorites-description {
+            font-size: 18px;
+        }
+
+        .favorites-buttons {
+            gap: 8px;
+
+            .favorites-button {
+                padding: 8px 15px;
+                font-size: 14px;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 20px;
+
+        .favorites-title {
+            font-size: 20px;
+        }
+
+        .favorites-subtitle {
+            font-size: 20px;
+        }
+
+        .favorites-description {
+            font-size: 16px;
+        }
+
+        .favorites-buttons {
+            .favorites-button {
+                font-size: 14px;
+            }
+        }
+    }
+}

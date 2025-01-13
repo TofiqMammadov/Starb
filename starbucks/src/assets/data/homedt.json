@@ -1,0 +1,31 @@
+ {
+    "homeDt": [
+      {
+        "id": 1,
+        "color": "#cfe6b5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96582.jpg",
+        "title": "The best of winter",
+        "desc": "A new winter menu is here, featuring new Cortado alongside Pistachio beverages and Matcha Latte—now customized to your perfect level of sweetness.",
+        "btn": "Add to order",
+        "to": "menu/featured"
+      },
+      {
+        "id": 2,
+        "color": "#cfe6b5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96497.jpg",
+        "title": "From the birthplace of coffee",
+        "desc": "With distinctive floral, tangerine and lemon balm notes, Single-Origin Ethiopia is a unique global favorite.",
+        "btn": "Add to order",
+        "to": "menu"
+      },
+      {
+        "id": 3,
+        "color": "#cfe6b5",
+        "img": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96533.jpg",
+        "title": "Your free coffee awaits",
+        "desc": "Unlock Rewards from the very first sip, starting with a free handcrafted drink with qualifying purchase during your first week.*",
+        "btn": "Join now",
+        "to": "account/create"
+      }
+    ]
+  }
