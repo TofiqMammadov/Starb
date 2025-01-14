@@ -14,7 +14,7 @@ const SubNav = () => {
         <li className="subnav-item">
           <Link 
             to="/menu"
-            className={activeLink === "menu" ? "active" : ""}
+            className={activeLink === "menu" ? "active-subnav" : ""}
             onClick={() => handleLinkClick("menu")}
           >
             Menu
@@ -23,7 +23,7 @@ const SubNav = () => {
         <li className="subnav-item">
           <Link 
             to="featured"
-            className={activeLink === "featured" ? "active" : ""}
+            className={activeLink === "featured" ? "active-subnav" : ""}
             onClick={() => handleLinkClick("featured")}
           >
             Featured
@@ -32,7 +32,7 @@ const SubNav = () => {
         <li className="subnav-item">
           <Link 
             to="previous"
-            className={activeLink === "previous" ? "active" : ""}
+            className={activeLink === "previous" ? "active-subnav" : ""}
             onClick={() => handleLinkClick("previous")}
           >
             Previous
@@ -41,7 +41,7 @@ const SubNav = () => {
         <li className="subnav-item">
           <Link 
             to="favorites"
-            className={activeLink === "favorites" ? "active" : ""}
+            className={activeLink === "favorites" ? "active-subnav" : ""}
             onClick={() => handleLinkClick("favorites")}
           >
             Favorites
