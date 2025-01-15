@@ -42,11 +42,35 @@ app.use("/uploads", express.static("uploads"));
 const products = [
   {
     id: "1",
-    name: "Product Name 1",
-    price: 10.9,
-    details: "Product details: Lorem ipsum dolar sit amet",
-    featured: true,
+    name: "Oleato Golden Foam Cold Brew",
+    price: 4.95,
+    details: "Cold Brew with a hint of caramel and topped with a golden foam made from cold foam and turmeric.",
+    featured: false,
     productImage: "uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Oleato",
+    sizes: [
+      {
+        "size": "Tall",
+        "capacity": "12 fl oz",
+        "calories": "330 calories"
+      },
+      {
+        "size": "Grande",
+        "capacity": "16 fl oz",
+        "calories": "380 calories"
+      },
+      {
+        "size": "Venti",
+        "capacity": "24 fl oz",
+        "calories": "400 calories"
+      },
+      {
+        "size": "Trenta",
+        "capacity": "30 fl oz",
+        "calories": "450 calories"
+      }
+    ]
   },
   {
     id: "2",

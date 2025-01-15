@@ -1,20 +1,23 @@
 .coffee-optional {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin: 50px 0 60px;
+
   .container {
     .row {
       display: flex;
       align-items: flex-start;
-      //   justify-content: space-around;
       gap: 130px;
       flex-wrap: wrap;
+
+      // Size Options styles remain unchanged
       .size-options {
         margin-left: 120px;
+
         .size-options-title {
           border-bottom: 4px solid #d4e9e2;
           padding-right: 300px;
           color: black;
         }
+
         .size-option {
           display: flex;
           justify-content: center;
@@ -24,142 +27,175 @@
 
           .size {
             display: flex;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, border 0.2s;
 
             .cup-icon {
               display: flex;
               align-items: center;
               justify-content: center;
-              font-size: 40px;
+              font-size: 30px;
               padding-bottom: 10px;
               color: black;
+              position: relative;
+
               &::before {
-                background-color: #d4e9e2;
-                position: absolute;
                 content: "";
-                width: 50px;
-                height: 50px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
                 border: 2px solid #007850;
                 border-radius: 50%;
-                z-index: -99;
+                background-color: #d4e9e2;
+                z-index: -1;
               }
             }
+
             .size-title {
               font-weight: 700;
               color: black;
             }
+
             .size-ft {
               color: black;
             }
-          }
-        }
-      }
-      .customizations {
-        .customizations-title {
-          border-bottom: 4px solid #d4e9e2;
-          padding-right: 140px;
-          color: black;
-        }
-        .customizations-edits {
-          .customizations-edit {
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
-            margin-top: 40px;
-            display: flex;
-            justify-content: space-between;
-            border: 0.14px solid rgba(0, 0, 0, 0.192);
-            transition: border 0.2s linear 0.2s;
-            border-radius: 5px;
-            span {
-              color: rgba(0, 0, 0, 0.87);
-              padding: 12px 16px;
-              font-size: 1.2rem;
+
+            &.selected {
+              border-radius: 10px;
+              transform: scale(1.25);
+              background-color: #f0f8f5;
+            }
+
+            &:hover {
+              transform: scale(1.1);
             }
           }
         }
       }
-    }
-  }
-}
-@media only screen and (max-width: 600px), (max-width: 1024px) {
-  .coffee-optional {
-    margin-top: 50px;
-    margin-bottom: 60px;
-    .container {
-      .row {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        justify-content: center;
-        flex-direction: column;
-        .size-options {
-          margin: 0 !important;
-          .size-options-title {
-            padding-right: 0px !important;
-            font-size: 20px;
-          }
-          .size-option {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 13px;
-            margin-top: 40px;
 
-            .size {
+      // Updated Customizations styles
+      .customizations {
+        flex: 1;
+        max-width: 600px;
+
+        .customizations-title {
+          font-size: 24px;
+          font-weight: 700;
+          color: #1f1f1f;
+          margin-bottom: 24px;
+          border-bottom: 4px solid #d4e9e2;
+        }
+
+        .customization-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .customization-item {
+          position: relative;
+          border: 1px solid #d4d4d4;
+          border-radius: 8px;
+          padding: 16px;
+          background: white;
+          outline: none;
+
+          .category-label {
+            position: absolute;
+            top: -8px;
+            left: 16px;
+            background-color: white;
+            padding: 0 8px;
+            font-size: 12px;
+            color: #6b7280;
+          }
+
+          .select-wrapper {
+            position: relative;
+            
+            select {
+              width: 100%;
+              padding: 8px 16px;
+              font-size: 16px;
+              border: none;
+              background: transparent;
+              appearance: none;
+              cursor: pointer;
+              color: #1f1f1f;
+              font-weight: 500;
+              outline: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              right: 16px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2300754a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+              pointer-events: none;
+            }
+          }
+
+          .shots-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .shots-label {
+              font-size: 16px;
+              font-weight: 500;
+              color: #1f1f1f;
+            }
+
+            .shots-control {
               display: flex;
               align-items: center;
-              flex-direction: column;
-              justify-content: center;
+              gap: 16px;
 
-              .cup-icon {
+              .control-button {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 25px;
-                padding-bottom: 10px;
-                color: black;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #00754a;
+                background: white;
+                color: #00754a;
+                font-size: 20px;
+                cursor: pointer;
+                transition: background-color 0.2s;
 
-                &::before {
-                  background-color: #d4e9e2;
-                  position: absolute;
-                  content: "";
-                  width: 30px;
-                  height: 30px;
-                  border: 2px solid #007850;
-                  border-radius: 50%;
-                  z-index: -99;
+                &:hover {
+                  background-color: #f0f8f5;
+                }
+
+                &:disabled {
+                  border-color: #d1d5db;
+                  color: #d1d5db;
+                  cursor: not-allowed;
                 }
               }
-              .size-title {
-                font-weight: 700;
-                color: black;
-              }
-              .size-ft {
-                color: black;
-              }
-            }
-          }
-        }
-        .customizations {
-          .customizations-title {
-            border-bottom: 4px solid #d4e9e2;
-            padding-right: 140px;
-            color: black;
-          }
-          .customizations-edits {
-            .customizations-edit {
-              box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
-              margin-top: 40px;
-              display: flex;
-              justify-content: space-between;
-              border: 0.14px solid rgba(0, 0, 0, 0.192);
-              transition: border 0.2s linear 0.2s;
-              border-radius: 5px;
-              span {
-                color: rgba(0, 0, 0, 0.87);
-                padding: 12px 16px;
-                font-size: 1.2rem;
+
+              .shots-count {
+                font-size: 16px;
+                font-weight: 500;
+                color: #1f1f1f;
+                min-width: 24px;
+                text-align: center;
               }
             }
           }
@@ -167,29 +203,65 @@
       }
     }
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .customizations {
-    .customizations-title {
-      border-bottom: 4px solid #d4e9e2;
-      padding-right: 0px !important;
-      color: black;
-    }
-    .customizations-edits {
-      .customizations-edit {
-        width: 100% !important;
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        border: 0.14px solid rgba(0, 0, 0, 0.192);
-        transition: border 0.2s linear 0.2s;
-        border-radius: 5px;
-        span {
-          color: rgba(0, 0, 0, 0.87);
-          padding: 12px 16px;
-          font-size: 1.2rem;
+  @media only screen and (max-width: 1024px) {
+    .container {
+      .row {
+        gap: 30px;
+        justify-content: center;
+        flex-direction: column;
+
+        .size-options {
+          margin: 0 !important;
+
+          .size-options-title {
+            padding-right: 0 !important;
+            font-size: 20px;
+          }
+
+          .size-option {
+            gap: 13px;
+
+            .size {
+              .cup-icon {
+                font-size: 25px;
+
+                &::before {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+
+        .customizations {
+          .customizations-title {
+            padding-right: 0 !important;
+            font-size: 1rem;
+          }
+
+          .customization-item {
+            padding: 12px;
+            
+            .category-label {
+              font-size: 12px;
+            }
+
+            select {
+              font-size: 1rem;
+              padding: 8px 12px;
+            }
+
+            .shots-control {
+              gap: 12px;
+              
+              button {
+                width: 28px;
+                height: 28px;
+              }
+            }
+          }
         }
       }
     }
