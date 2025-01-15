@@ -25,6 +25,7 @@ import MenuProduct from "./components/Menu/MenuProduct";
 import ProductCategories from "./components/Menu/ProductCategories";
 import Featured from "./pages/Featured";
 import Favorites from "./pages/Favorites";
+import MenuPage from "./pages/MenuPage";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")));
@@ -37,8 +38,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />}>
-              <Route path="/menu" element={<ProductCategories />} />
-              <Route path="/menu" element={<MenuProduct />} />
+              
+              <Route path="/menu" element={<MenuPage />} />
               <Route path="featured" element={<Featured />} />
               <Route path="previous" element={<Previous />} />
               <Route path="favorites" element={<Favorites />} />
