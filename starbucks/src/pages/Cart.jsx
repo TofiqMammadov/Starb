@@ -90,7 +90,6 @@ const Cart = () => {
         <Box className="invoice">
           <img src={inVoiceLogo} width={50} height={50} alt="" />
           <h5>Thank you for placing the order</h5>
-          <span>Order ID: {id}</span>
           <button className="home-card-btn" onClick={refresh}>
             OK
           </button>

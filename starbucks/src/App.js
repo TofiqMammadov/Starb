@@ -27,6 +27,7 @@ import Featured from "./pages/Featured";
 import Favorites from "./pages/Favorites";
 import MenuPage from "./pages/MenuPage";
 import MainMenu from "./pages/MainMenu";
+import GiftcardDetails from "./pages/GiftcardDetails";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(
@@ -54,6 +55,8 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/giftcards" element={<Giftcards />} />
+            <Route path="/giftcard-detail" element={<GiftcardDetails />} />
+            
             <Route
               path="/signin"
               setLoggedIn={setLoggedIn}

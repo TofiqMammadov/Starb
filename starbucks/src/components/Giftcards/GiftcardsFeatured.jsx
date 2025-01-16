@@ -1,17 +1,11 @@
-import giftcardImg_1 from "../../assets/images/giftcard-1.png";
-import giftcardImg_2 from "../../assets/images/giftcard-2.png";
-import giftcardImg_3 from "../../assets/images/giftcard-3.png";
-import giftcardImg_4 from "../../assets/images/giftcard-4.png";
-import giftcardImg_5 from "../../assets/images/giftcard-5.png";
-import giftcardImg_6 from "../../assets/images/giftcard-6.png";
-import giftcardImg_7 from "../../assets/images/giftcard-7.png";
-import giftcardImg_8 from "../../assets/images/giftcard-8.png";
-
+import { Giftcards } from "../../database/db.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { useState } from "react";
+
+
 
 export const GiftcardsFeatured = () => {
   const [isBeginning, setIsBeginning] = useState(true);
@@ -21,6 +15,10 @@ export const GiftcardsFeatured = () => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
   };
+
+  const openDetails = () => {
+    console.log("Open details");
+  }
 
   return (
     <div className="giftcards-container px-4 lg:px-8">
@@ -46,19 +44,10 @@ export const GiftcardsFeatured = () => {
           modules={[Navigation]}
           className="mySwiper"
         >
-          {[
-            giftcardImg_1,
-            giftcardImg_2,
-            giftcardImg_3,
-            giftcardImg_4,
-            giftcardImg_5,
-            giftcardImg_6,
-            giftcardImg_7,
-            giftcardImg_8,
-          ].map((imgSrc, index) => (
-            <SwiperSlide key={index} className="flex items-center justify-center">
+          {Giftcards.slice(0,8).map((img, index) => (
+            <SwiperSlide key={index} onClick={openDetails} className="flex items-center justify-center">
               <img
-                src={imgSrc}
+                src={img.img}
                 alt={`Giftcard ${index + 1}`}
                 className="w-full h-auto object-cover rounded-md shadow-md"
               />
@@ -70,8 +59,12 @@ export const GiftcardsFeatured = () => {
         <div className="swiper-button-prev bg-gray-200 hover:bg-gray-300 rounded-full p-2 absolute top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer" />
         <div className="swiper-button-next bg-gray-200 hover:bg-gray-300 rounded-full p-2 absolute top-1/2 transform -translate-y-1/2 right-4 z-10 cursor-pointer" />
       </section>
+
     </div>
   );
 };
 
 export default GiftcardsFeatured;
+
+
+

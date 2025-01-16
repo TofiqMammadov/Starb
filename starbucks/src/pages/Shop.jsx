@@ -54,6 +54,10 @@ export const Shop = () => {
             </li>
             <span className="subnav-slash">/</span>
             <li className="subnav-item">
+              <Link to={`/menu/${product.subcategory}`}>{product.subcategory}</Link>
+            </li>
+            <span className="subnav-slash">/</span>
+            <li className="subnav-item">
               <span className="sub-nav-item-active">{product.name}</span>
             </li>
           </ul>

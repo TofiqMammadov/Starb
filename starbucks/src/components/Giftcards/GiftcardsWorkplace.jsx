@@ -1,17 +1,23 @@
-// Images
-import GiftcardImg40 from "../../assets/images/giftcard-40.png";
-import GiftcardImg41 from "../../assets/images/giftcard-41.png";
-import GiftcardImg42 from "../../assets/images/giftcard-42.png";
+import { Giftcards } from "../../database/db.js";
 
 const GiftcardsWorkplace = () => {
+  const openDetails = () => {
+    console.log("Open details");
+  };
   return (
     <div className="giftcards-allcards">
       <div className="giftcards-container">
         <h2 className="giftcards-title">Workplace</h2>
         <div className="giftcards-allcards-wrapper">
-          <img src={GiftcardImg40} alt="" />
-          <img src={GiftcardImg41} alt="" />
-          <img src={GiftcardImg42} alt="" />
+          {Giftcards.slice(39, 42).map((img, index) => (
+            <div onClick={openDetails} key={index} className="giftcard-card">
+              <img
+                src={img.img}
+                alt={`Giftcard ${index + 40}`}
+                className="w-full h-auto object-cover rounded-md shadow-md"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

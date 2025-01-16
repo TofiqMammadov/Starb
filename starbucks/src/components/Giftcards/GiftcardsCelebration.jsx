@@ -1,18 +1,23 @@
-// Images
-import GiftcardImg16 from "../../assets/images/giftcard-16.png";
-import GiftcardImg17 from "../../assets/images/giftcard-17.png";
-import GiftcardImg18 from "../../assets/images/giftcard-18.png";
-import GiftcardImg19 from "../../assets/images/giftcard-19.png";
+import { Giftcards } from "../../database/db.js";
+
 const GiftcardsCelebration = () => {
+  const openDetails = () => {
+    console.log("Open details");
+  }
   return (
     <div className="giftcards-allcards">
       <div className="giftcards-container">
         <h2 className="giftcards-title">Celebration</h2>
         <div className="giftcards-allcards-wrapper">
-          <img src={GiftcardImg16} alt="" />
-          <img src={GiftcardImg17} alt="" />
-          <img src={GiftcardImg18} alt="" />
-          <img src={GiftcardImg19} alt="" />
+          {Giftcards.slice(16, 20).map((img, index) => (
+            <div onClick={openDetails} key={index} className="giftcard-card">
+              <img
+                src={img.img}
+                alt={`Giftcard ${index + 1}`}
+                className="w-full h-auto object-cover rounded-md shadow-md"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
