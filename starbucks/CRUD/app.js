@@ -42,52 +42,377 @@ app.use("/uploads", express.static("uploads"));
 const products = [
   {
     id: "1",
-    name: "Oleato Golden Foam Cold Brew",
-    price: 4.95,
-    details: "Cold Brew with a hint of caramel and topped with a golden foam made from cold foam and turmeric.",
-    featured: false,
-    productImage: "uploads/grid.jpg",
+    name: "Pike Place® Roast",
+    price: 2.95,
+    details: "Our signature medium-roasted coffee with notes of chocolate and toasted nuts",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
     category: "Drinks",
-    subcategory: "Oleato",
+    subcategory: "Hot Coffees",
     sizes: [
       {
-        "size": "Tall",
-        "capacity": "12 fl oz",
-        "calories": "330 calories"
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "5 calories"
       },
       {
-        "size": "Grande",
-        "capacity": "16 fl oz",
-        "calories": "380 calories"
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "10 calories"
       },
       {
-        "size": "Venti",
-        "capacity": "24 fl oz",
-        "calories": "400 calories"
-      },
-      {
-        "size": "Trenta",
-        "capacity": "30 fl oz",
-        "calories": "450 calories"
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "15 calories"
       }
     ]
   },
   {
     id: "2",
-    name: "Product Name 2",
-    price: 22.9,
-    details: "Product details: Lorem ipsum dolar sit amet",
+    name: "Caffè Americano",
+    price: 3.25,
+    details: "Espresso shots topped with hot water",
     featured: false,
-    productImage: "uploads/grid.jpg",
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Hot Coffees",
+    sizes: [
+      {
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "5 calories"
+      },
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "10 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "15 calories"
+      }
+    ]
   },
   {
     id: "3",
-    name: "Product Name 3",
-    price: 23.0,
-    details: "Product details: Lorem ipsum dolar sit amet",
+    name: "Chai Tea Latte",
+    price: 4.15,
+    details: "Black tea infused with cinnamon, clove, and other warming spices",
     featured: true,
-    productImage: "uploads/grid.jpg",
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Hot Teas",
+    sizes: [
+      {
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "120 calories"
+      },
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "190 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "240 calories"
+      }
+    ]
   },
+  {
+    id: "4",
+    name: "Earl Grey Tea",
+    price: 2.95,
+    details: "A bright blend of black tea flavored with bergamot and lavender",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Hot Teas",
+    sizes: [
+      {
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },
+  {
+    id: "5",
+    name: "Hot Chocolate",
+    price: 3.45,
+    details: "Steamed milk and mocha sauce topped with sweetened whipped cream",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Hot Drinks",
+    sizes: [
+      {
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "190 calories"
+      },
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "250 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "320 calories"
+      }
+    ]
+  },
+  {
+    id: "6",
+    name: "Steamed Apple Juice",
+    price: 2.75,
+    details: "Freshly steamed 100% apple juice",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Hot Drinks",
+    sizes: [
+      {
+        size: "Short",
+        capacity: "8 fl oz",
+        calories: "120 calories"
+      },
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "180 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "220 calories"
+      }
+    ]
+  },
+  {
+    id: "7",
+    name: "Caramel Frappuccino",
+    price: 4.95,
+    details: "Caramel syrup meets coffee, milk and ice",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Frappucino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "280 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "380 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "420 calories"
+      }
+    ]
+  },
+  {
+    id: "8",
+    name: "Mocha Frappuccino",
+    price: 4.95,
+    details: "Mocha sauce, Frappuccino® roast coffee, milk and ice",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Frappucino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "290 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "400 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "440 calories"
+      }
+    ]
+  },
+  {
+    id: "9",
+    name: "Cold Brew",
+    price: 3.95,
+    details: "Slow-steeped, super-smooth cold brew coffee",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "5 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "5 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "10 calories"
+      }
+    ]
+  },
+  {
+    id: "10",
+    name: "Nitro Cold Brew",
+    price: 4.45,
+    details: "Smooth cold brew coffee infused with nitrogen",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "5 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "5 calories"
+      }
+    ]
+  },
+  {
+    id: "11",
+    name: "Iced Black Tea",
+    price: 2.95,
+    details: "Premium black tea sweetened just right and shaken with ice",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Iced Teas",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "30 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "45 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "60 calories"
+      }
+    ]
+  },
+  {
+    id: "12",
+    name: "Iced Green Tea Lemonade",
+    price: 3.45,
+    details: "Green tea blended with mint, lemongrass and lemonade",
+    featured: true,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Iced Teas",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "90 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "120 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "160 calories"
+      }
+    ]
+  },
+  {
+    id: "13",
+    name: "Lemonade",
+    price: 2.95,
+    details: "Freshly squeezed lemonade",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Cold Drinks",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "120 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "160 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "200 calories"
+      }
+    ]
+  },
+  {
+    id: "14",
+    name: "Iced Water",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/grid.jpg",
+    category: "Drinks",
+    subcategory: "Cold Drinks",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  }
 ];
 
 /***********************************************************/

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CiCoffeeCup } from "react-icons/ci";
+import axios from "axios";
 
 const CoffeeOptional = () => {
   const [selectedSize, setSelectedSize] = useState("");
@@ -15,6 +16,19 @@ const CoffeeOptional = () => {
       return newValue >= 1 && newValue <= 12 ? newValue : prev;
     });
   };
+
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = () => {
+    axios.get(`http://localhost:5000/api/products`).then((res) => {
+      const posts = res.data;
+      setPosts(posts);
+    });
+  };
+
 
   return (
     <section className="coffee-optional">
@@ -40,8 +54,29 @@ const CoffeeOptional = () => {
                     <p>{8 + index * 4} fl oz</p>
                   </div>
                 </div>
-              ))}
+              ))} 
+              {/* {posts.map((item) =>
+                item.sizes.map((size, index) => (
+                  <div
+                    key={index}
+                    className={`size ${selectedSize === size.size ? "selected" : ""}`}
+                    onClick={() => handleSizeSelect(size.size)}
+                  >
+                    <div className="cup-icon">
+                      <CiCoffeeCup />
+                    </div>
+                    <div className="size-title">
+                      <p>{size.size}</p>
+                    </div>
+                    <div className="size-ft">
+                      <p>{size.capacity}</p>
+                    </div>
+                  </div>
+                ))
+              )} */}
             </div>
+
+
           </div>
 
           {/* Customizations Section */}

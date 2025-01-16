@@ -13,7 +13,6 @@ const MenuProduct = () => {
       setPosts(posts);
     });
   };
-  console.log(posts);
   return (
     <section className="menu-product">
       <h2 className="menu-title">Menu</h2>
