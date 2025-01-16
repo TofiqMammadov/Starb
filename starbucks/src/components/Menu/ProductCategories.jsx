@@ -5,7 +5,6 @@ import {
   MenuProductCategoriesFood,
   MenuProductCategoriesAtHomeCoffee,
   MenuProductCategoriesMerchandise,
-  MenuProductCategoriesGiftCards,
 } from "../../database/db";
 
 const ProductCategories = () => {
@@ -45,16 +44,6 @@ const ProductCategories = () => {
         <li className="categories-item">
           <span>Merchandise</span>
           {MenuProductCategoriesMerchandise.map((item) => (
-            <ul key={item.id}>
-              <li className="categories-item">
-                <Link to={`/menu/${item.content}`}>{item.content}</Link>
-              </li>
-            </ul>
-          ))}
-        </li>
-        <li className="categories-item">
-          <span>Gift Cards</span>
-          {MenuProductCategoriesGiftCards.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
                 <Link to={`/menu/${item.content}`}>{item.content}</Link>

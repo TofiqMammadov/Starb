@@ -26,29 +26,36 @@ const MenuProduct = () => {
   );
 
   return (
-    <section className="menu-product">
-      <h2 className="menu-title">Menu</h2>
+    <section className="menu-product py-6 px-4 sm:px-6 lg:px-8">
+      <h2 className="menu-title text-2xl sm:text-3xl font-bold mb-6">Menu</h2>
       <div className="row">
-        <div className="product-cards">
+        <div className="flex flex-wrap gap-4 ">
           {filtered.map((item) => (
-            <Link to={`/shop/${item.id}`} key={item.id}>
-              <div className="product-card">
-                <img
-                  src={`http://localhost:3333/${item.productImage}`}
-                  alt={item.name}
-                  className="product-card-image"
-                />
-                <span className="product-card-title">{item.name}</span>
+            <Link to={`/shop/${item.id}`} key={item.id} className="group">
+              <div className="product-card flex flex-col items-center text-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-gray-200 mb-2">
+                  <img
+                    src={`http://localhost:3333/${item.productImage}`}
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                    }}
+                  />
+                </div>
+                <span className="product-card-title text-sm sm:text-base font-medium">
+                  {item.name}
+                </span>
               </div>
             </Link>
           ))}
         </div>
         <div>
           {filtered.length === 0 && (
-            <h2>
-              No product found
+            <h2 className="text-center text-lg font-medium mt-6">
+              No product found{" "}
               <span role="img" aria-label="sad">
-                {" "}
                 😢
               </span>
             </h2>
@@ -57,6 +64,9 @@ const MenuProduct = () => {
       </div>
     </section>
   );
+  
+  
+  
 };
 
 export default MenuProduct;

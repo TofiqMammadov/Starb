@@ -49,8 +49,8 @@
 
 @media only screen and (max-width: 768px) {
   .product-categories {
-    width: 100%;
-    padding: 10px;
+    display: none;
+
 
     .product-categories-list {
       gap: 15px;

@@ -138,20 +138,7 @@ const MenuProductCategoriesMerchandise = [
     content: "Other",
   },
 ];
-const MenuProductCategoriesGiftCards = [
-  {
-    id: 1,
-    content: "Happy Birthday",
-  },
-  {
-    id: 2,
-    content: "Thank You",
-  },
-  {
-    id: 3,
-    content: "Traditional",
-  },
-];
+
 
 export {
   homeCards,
@@ -159,5 +146,4 @@ export {
   MenuProductCategoriesFood,
   MenuProductCategoriesAtHomeCoffee,
   MenuProductCategoriesMerchandise,
-  MenuProductCategoriesGiftCards,
 };

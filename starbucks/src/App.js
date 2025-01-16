@@ -26,6 +26,7 @@ import ProductCategories from "./components/Menu/ProductCategories";
 import Featured from "./pages/Featured";
 import Favorites from "./pages/Favorites";
 import MenuPage from "./pages/MenuPage";
+import MainMenu from "./pages/MainMenu";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(
@@ -42,7 +43,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />}>
-              <Route path="/menu" element={<MenuPage />} />
+              <Route path="/menu" element={<MainMenu />} />
               <Route path="/menu/:category" element={<MenuPage />} />
               <Route path="featured" element={<Featured />} />
               <Route path="previous" element={<Previous />} />
