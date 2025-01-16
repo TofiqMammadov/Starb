@@ -45,7 +45,7 @@ const Edit = () => {
     data.append("productImage", productImage);
 
     axios
-      .post(`http://localhost:5000/api/products`, data)
+      .post(`http://localhost:3333/api/products`, data)
       .then((res) => history.push("/"))
       .catch((err) => console.log(err));
   };

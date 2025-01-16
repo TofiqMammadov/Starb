@@ -16,6 +16,11 @@ import { CartContext } from "../context/cartContext";
 import CartNav from "../components/Cart/CartNav";
 import ChooseStore from "../components/Cart/ChooseStore";
 import { SimpleSnackbar } from "../components/Snackbar/Snackbar";
+
+
+
+
+
 const Cart = () => {
   const {
     cart,
@@ -24,11 +29,20 @@ const Cart = () => {
     handleDecreaseQuantity,
     handleClearCartClick,
   } = useContext(CartContext);
+
+
+  console.log(cart);
   const [total, setTotal] = useState(0);
+
+
+
   useEffect(() => {
     const totalQuantity = cart.reduce((acc, curr) => acc + curr.quantity, 0);
     setTotal(totalQuantity);
   }, [cart]);
+
+
+
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const handleOpenModal = () => setOpenModal(true);
@@ -44,6 +58,8 @@ const Cart = () => {
 
     setOpen(false);
   };
+
+
   function refresh() {
     window.location.reload();
   }
@@ -110,13 +126,13 @@ const Cart = () => {
               {cart?.map((product) => (
                 <div className="cart-product-card" key={product.id}>
                   <img
-                    src={`http://localhost:5000/${product.productImage}`}
+                    src={`http://localhost:3333/${product.productImage}`}
                     alt=""
                   />
                   <div className="cart-card-column">
                     <h2 className="title">{product.name}</h2>
-                    <p className="strech">Grande</p>
-                    <span> 200★ item</span>
+                    {/* <p className="strech">Grande</p> */}
+                    {/* <span> 200★ item</span> */}
                     <div className="cart-card-row">
                       <Link to={`/shop/${product.id}`}>
                         <BsPencil />

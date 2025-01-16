@@ -47,19 +47,19 @@ const Create = () => {
     data.append("productImage", productImage);
 
     axios
-      .put(`http://localhost:5000/api/products/${productId}`, data)
+      .put(`http://localhost:3333/api/products/${productId}`, data)
       .then((res) => history.push(`/products/${productId}`))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
-    axios(`http://localhost:5000/api/products/${productId}`)
+    axios(`http://localhost:3333/api/products/${productId}`)
       .then((res) => {
         setState({
           name: res.data.name,
           calories: res.data.calories,
         });
-        setPreviewImage(`http://localhost:5000/${res.data.productImage}`);
+        setPreviewImage(`http://localhost:3333/${res.data.productImage}`);
       })
       .catch((err) => console(err));
   }, [productId]);

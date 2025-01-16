@@ -10,7 +10,7 @@ const Details = () => {
   const { productId } = useParams();
 
   useEffect(() => {
-    axios(`http://localhost:5000/api/products/${productId}`)
+    axios(`http://localhost:3333/api/products/${productId}`)
       .then((res) => setProduct(res.data))
       .catch((err) => setError(err.response.data));
   }, [productId]);
@@ -30,7 +30,7 @@ const Details = () => {
         <Link to={`/edit/${product.id}`}>Edit</Link>
       </div>
       <div className="product-details-card">
-      <img src={`http://localhost:5000/${product.productImage}`} alt="" />
+      <img src={`http://localhost:3333/${product.productImage}`} alt="" />
       <h1>{product.name}</h1>
       <p>{product.calories}</p>
       </div>

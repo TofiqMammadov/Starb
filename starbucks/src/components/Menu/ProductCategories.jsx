@@ -17,7 +17,7 @@ const ProductCategories = () => {
           {MenuProductCategoriesDrinks.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
-                <Link to={"/menu"}>{item.content}</Link>
+                <Link to={`/menu/${item.content}`}>{item.content}</Link>
               </li>
             </ul>
           ))}
@@ -27,7 +27,7 @@ const ProductCategories = () => {
           {MenuProductCategoriesFood.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
-                <Link to={"/menu"}>{item.content}</Link>
+                <Link to={`/menu/${item.content}`}>{item.content}</Link>
               </li>
             </ul>
           ))}
@@ -37,7 +37,7 @@ const ProductCategories = () => {
           {MenuProductCategoriesAtHomeCoffee.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
-                <Link to={"/menu"}>{item.content}</Link>
+                <Link to={`/menu/${item.content}`}>{item.content}</Link>
               </li>
             </ul>
           ))}
@@ -47,7 +47,7 @@ const ProductCategories = () => {
           {MenuProductCategoriesMerchandise.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
-                <Link to={"/menu"}>{item.content}</Link>
+                <Link to={`/menu/${item.content}`}>{item.content}</Link>
               </li>
             </ul>
           ))}
@@ -57,7 +57,7 @@ const ProductCategories = () => {
           {MenuProductCategoriesGiftCards.map((item) => (
             <ul key={item.id}>
               <li className="categories-item">
-                <Link to={"/menu"}>{item.content}</Link>
+                <Link to={`/menu/${item.content}`}>{item.content}</Link>
               </li>
             </ul>
           ))}

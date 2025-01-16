@@ -530,5 +530,5 @@ function validateUpdateProduct(product) {
 
 /********* PORT **********/
 //To set PORT run set/export PORT=YOUR_VALUE
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3333;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

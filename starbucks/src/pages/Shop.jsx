@@ -33,7 +33,7 @@ export const Shop = () => {
   }, [cardID]);
 
   const getData = () => {
-    axios.get(`http://localhost:5000/api/products/${cardID}`).then((res) => {
+    axios.get(`http://localhost:3333/api/products/${cardID}`).then((res) => {
       setProduct(res.data);
     });
   };
@@ -63,7 +63,7 @@ export const Shop = () => {
             <div className="product-card" key={product.id}>
               <div className="product-card-img">
                 <img
-                  src={`http://localhost:5000/${product.productImage}`}
+                  src={`http://localhost:3333/${product.productImage}`}
                   alt=""
                 />
               </div>

@@ -28,17 +28,22 @@ import Favorites from "./pages/Favorites";
 import MenuPage from "./pages/MenuPage";
 
 const App = () => {
-  const [isLoggedIn, setLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")));
+  const [isLoggedIn, setLoggedIn] = useState(
+    JSON.parse(localStorage.getItem("isLoggedIn"))
+  );
   const location = useLocation();
   return (
     <div className="app">
       <Loading>
         <CartProvider>
-          {location.pathname !== "/cart" && <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />}
+          {location.pathname !== "/cart" && (
+            <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
+          )}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />}>
               <Route path="/menu" element={<MenuPage />} />
+              <Route path="/menu/:category" element={<MenuPage />} />
               <Route path="featured" element={<Featured />} />
               <Route path="previous" element={<Previous />} />
               <Route path="favorites" element={<Favorites />} />
@@ -48,14 +53,22 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/giftcards" element={<Giftcards />} />
-            <Route path="/signin" setLoggedIn={setLoggedIn} element={<SignInForm />} />
-            <Route path="/signup" setLoggedIn={setLoggedIn} element={<SignUpForm />} />
+            <Route
+              path="/signin"
+              setLoggedIn={setLoggedIn}
+              element={<SignInForm />}
+            />
+            <Route
+              path="/signup"
+              setLoggedIn={setLoggedIn}
+              element={<SignUpForm />}
+            />
             <Route path="*" element={<Error />} />
           </Routes>
           {location.pathname !== "/cart" && <Footer />}
         </CartProvider>
       </Loading>
-    </div >
+    </div>
   );
 };
 

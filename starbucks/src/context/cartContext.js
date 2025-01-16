@@ -6,12 +6,12 @@ export const CartProvider = ({ children }) => {
   // Data extraction with Axios
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  const [setIsCartCleared] = useState(false);
+  const [isCartCleared, setIsCartCleared] = useState(false);
   useEffect(() => {
     getData();
   }, []);
   const getData = () => {
-    axios.get(`http://localhost:5000/api/products`).then((res) => {
+    axios.get(`http://localhost:3333/api/products`).then((res) => {
       const products = res.data;
       setProducts(products);
     });

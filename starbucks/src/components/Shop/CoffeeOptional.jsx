@@ -23,17 +23,16 @@ const CoffeeOptional = () => {
   }, []);
 
   const getData = () => {
-    axios.get(`http://localhost:5000/api/products`).then((res) => {
+    axios.get(`http://localhost:3333/api/products`).then((res) => {
       const posts = res.data;
       setPosts(posts);
     });
   };
 
-
   return (
     <section className="coffee-optional">
       <div className="container">
-        <div className="row">
+        <div className="row flex lg:flex-row lg:!items-start  flex-col !items-center">
           {/* Size Options - Unchanged */}
           <div className="size-options">
             <h2 className="size-options-title">Size options</h2>
@@ -54,7 +53,7 @@ const CoffeeOptional = () => {
                     <p>{8 + index * 4} fl oz</p>
                   </div>
                 </div>
-              ))} 
+              ))}
               {/* {posts.map((item) =>
                 item.sizes.map((size, index) => (
                   <div
@@ -75,8 +74,6 @@ const CoffeeOptional = () => {
                 ))
               )} */}
             </div>
-
-
           </div>
 
           {/* Customizations Section */}
@@ -139,7 +136,10 @@ const CoffeeOptional = () => {
                 </div>
               </div>
 
-              <select defaultValue="Blonde Espresso" className="customization-item">
+              <select
+                defaultValue="Blonde Espresso"
+                className="customization-item"
+              >
                 <option>Signature Espresso</option>
                 <option>Blonde Espresso</option>
                 <option>Decaf Espresso Roast</option>

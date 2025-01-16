@@ -8,13 +8,13 @@ const Home = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/api/products/${id}`)
+      .delete(`http://localhost:3333/api/products/${id}`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
-    axios("http://localhost:5000/api/products")
+    axios("http://localhost:3333/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -43,7 +43,7 @@ const Home = () => {
             <td>
               <img
                 className="product-img"
-                src={` http://localhost:5000/${product.productImage}`}
+                src={` http://localhost:3333/${product.productImage}`}
                 alt={product.name}
               />
             </td>
