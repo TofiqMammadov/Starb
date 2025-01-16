@@ -42,11 +42,11 @@ app.use("/uploads", express.static("uploads"));
 const products = [
   {
     id: "1",
-    name: "Pike Place® Roast",
+    name: "Cortado",
     price: 2.95,
     details: "Our signature medium-roasted coffee with notes of chocolate and toasted nuts",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/cortado.jpg",
     category: "Drinks",
     subcategory: "Hot Coffees",
     sizes: [
@@ -69,11 +69,11 @@ const products = [
   },
   {
     id: "2",
-    name: "Caffè Americano",
+    name: "Brown Sugar Oatmilk Cortado",
     price: 3.25,
     details: "Espresso shots topped with hot water",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/browncortado.jpg",
     category: "Drinks",
     subcategory: "Hot Coffees",
     sizes: [
@@ -96,13 +96,13 @@ const products = [
   },
   {
     id: "3",
-    name: "Chai Tea Latte",
+    name: "Cafe Americano",
     price: 4.15,
     details: "Black tea infused with cinnamon, clove, and other warming spices",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/cafeamericano.jpg",
     category: "Drinks",
-    subcategory: "Hot Teas",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Short",
@@ -123,13 +123,13 @@ const products = [
   },
   {
     id: "4",
-    name: "Earl Grey Tea",
+    name: "Single-Origin Ethiopia",
     price: 2.95,
     details: "A bright blend of black tea flavored with bergamot and lavender",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/singleoriginethiopia.jpg",
     category: "Drinks",
-    subcategory: "Hot Teas",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Short",
@@ -150,13 +150,13 @@ const products = [
   },
   {
     id: "5",
-    name: "Hot Chocolate",
+    name: "Featured Dark Roast",
     price: 3.45,
     details: "Steamed milk and mocha sauce topped with sweetened whipped cream",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/featuredarkroast.jpg",
     category: "Drinks",
-    subcategory: "Hot Drinks",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Short",
@@ -177,13 +177,13 @@ const products = [
   },
   {
     id: "6",
-    name: "Steamed Apple Juice",
+    name: "Cappuciono",
     price: 2.75,
     details: "Freshly steamed 100% apple juice",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/cappucino.jpg",
     category: "Drinks",
-    subcategory: "Hot Drinks",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Short",
@@ -204,13 +204,13 @@ const products = [
   },
   {
     id: "7",
-    name: "Caramel Frappuccino",
+    name: "Espresso",
     price: 4.95,
     details: "Caramel syrup meets coffee, milk and ice",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/espresso.jpg",
     category: "Drinks",
-    subcategory: "Frappucino Blended",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -231,13 +231,13 @@ const products = [
   },
   {
     id: "8",
-    name: "Mocha Frappuccino",
+    name: "Caramel Brulee Latte",
     price: 4.95,
     details: "Mocha sauce, Frappuccino® roast coffee, milk and ice",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/caramellatte.jpg",
     category: "Drinks",
-    subcategory: "Frappucino Blended",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -258,13 +258,13 @@ const products = [
   },
   {
     id: "9",
-    name: "Cold Brew",
+    name: "Caffe Latte",
     price: 3.95,
     details: "Slow-steeped, super-smooth cold brew coffee",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/caffelatte.jpg",
     category: "Drinks",
-    subcategory: "Cold Coffees",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -285,13 +285,13 @@ const products = [
   },
   {
     id: "10",
-    name: "Nitro Cold Brew",
+    name: "Caramel Macchiato",
     price: 4.45,
     details: "Smooth cold brew coffee infused with nitrogen",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/caramelmachiato.jpg",
     category: "Drinks",
-    subcategory: "Cold Coffees",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -307,13 +307,13 @@ const products = [
   },
   {
     id: "11",
-    name: "Iced Black Tea",
+    name: "Caffe Mocha",
     price: 2.95,
     details: "Premium black tea sweetened just right and shaken with ice",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/caffemocha.jpg",
     category: "Drinks",
-    subcategory: "Iced Teas",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -334,13 +334,13 @@ const products = [
   },
   {
     id: "12",
-    name: "Iced Green Tea Lemonade",
+    name: "White Chocolate Mocha",
     price: 3.45,
     details: "Green tea blended with mint, lemongrass and lemonade",
     featured: true,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/whitechocolatemocha.jpg",
     category: "Drinks",
-    subcategory: "Iced Teas",
+    subcategory: "Hot Coffees",
     sizes: [
       {
         size: "Tall",
@@ -361,13 +361,13 @@ const products = [
   },
   {
     id: "13",
-    name: "Lemonade",
+    name: "Chocolate Cream Cold Brew",
     price: 2.95,
     details: "Freshly squeezed lemonade",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/chocolatecreamcoldbrew.jpg",
     category: "Drinks",
-    subcategory: "Cold Drinks",
+    subcategory: "Cold Coffees",
     sizes: [
       {
         size: "Tall",
@@ -388,13 +388,13 @@ const products = [
   },
   {
     id: "14",
-    name: "Iced Water",
+    name: "Pistachio Cream Cold Brew",
     price: 0.00,
     details: "Fresh filtered water with ice",
     featured: false,
-    productImage: "./uploads/grid.jpg",
+    productImage: "./uploads/pistachiocreamcoldbrew.jpg",
     category: "Drinks",
-    subcategory: "Cold Drinks",
+    subcategory: "Cold Coffees",
     sizes: [
       {
         size: "Tall",
@@ -412,7 +412,476 @@ const products = [
         calories: "0 calories"
       }
     ]
-  }
+  },{
+    id: "15",
+    name: "Vanilla Sweet Cream Cold Brew",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/vanillasweetcreamcoldbrew.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "16",
+    name: "Nondiary Vanilla Sweet Cream Cold Brew",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/nondiaryvanillasweetcreamcoldbrew.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "17",
+    name: "Vanilla Sweet Cream Nitro Cold Brew",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/vanillasweetcreamnitrocoldbrew.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "18",
+    name: "Iced Caffe Americano",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedamericano.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "19",
+    name: "Iced Coffee",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedcoffee.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "20",
+    name: "Iced Shaken Espresso",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedshakenespresso.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "21",
+    name: "Iced Caramel Brulée Latte",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedcaramelbruleelatte.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "22",
+    name: "Iced Caffe Latte",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedcaffelatte.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "23",
+    name: "Iced White Chocolate Mocha",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/icedwhitechocolatemocha.jpg",
+    category: "Drinks",
+    subcategory: "Cold Coffees",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "24",
+    name: "Pineapple Passionfruit Refreshers Lemonade",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/pineapplepassionfruitrefresherslemonade.jpg",
+    category: "Drinks",
+    subcategory: "Starbucks Beverages",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "25",
+    name: "Frozen Mango Dragonfruit Refresher Lemonade",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/frozenmangodragonfruitrefresherlemonade.jpg",
+    category: "Drinks",
+    subcategory: "Starbucks Beverages",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "26",
+    name: "Paradise Drink",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/paradisedrink.jpg",
+    category: "Drinks",
+    subcategory: "Starbucks Beverages",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "27",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Starbucks Beverages",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },
+  {
+    id: "28",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Frapuccino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "29",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Frapuccino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "30",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Frapuccino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "31",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Frapuccino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },{
+    id: "32",
+    name: "Strawberry Acai Refresher",
+    price: 0.00,
+    details: "Fresh filtered water with ice",
+    featured: false,
+    productImage: "./uploads/strawberryacairefresher.jpg",
+    category: "Drinks",
+    subcategory: "Frapuccino Blended",
+    sizes: [
+      {
+        size: "Tall",
+        capacity: "12 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Grande",
+        capacity: "16 fl oz",
+        calories: "0 calories"
+      },
+      {
+        size: "Venti",
+        capacity: "24 fl oz",
+        calories: "0 calories"
+      }
+    ]
+  },
 ];
 
 /***********************************************************/

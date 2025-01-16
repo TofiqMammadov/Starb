@@ -42,11 +42,11 @@ const MenuProductCategoriesDrinks = [
   },
   {
     id: 2,
-    content: "Hot Teas",
+    content: "Cold Coffees",
   },
   {
     id: 3,
-    content: "Hot Drinks",
+    content: "Starbucks Beverages",
   },
   {
     id: 4,
@@ -54,34 +54,26 @@ const MenuProductCategoriesDrinks = [
   },
   {
     id: 5,
-    content: "Beverages",
+    content: "Iced Tea & Lemonade",
   },
   {
     id: 6,
-    content: "Cold Coffees",
-  },
-  {
-    id: 7,
-    content: "Iced Teas",
-  },
-  {
-    id: 8,
-    content: "Cold Drinks",
-  },
+    content: "Hot Teas",
+  }
 ];
 
 const MenuProductCategoriesFood = [
   {
     id: 1,
-    content: "Hot Breakfast",
+    content: "Breakfast",
   },
   {
     id: 2,
-    content: "Oatmeal & Yogurt",
+    content: "Bakery",
   },
   {
     id: 3,
-    content: "Bakery",
+    content: "Treats",
   },
   {
     id: 4,
@@ -89,20 +81,8 @@ const MenuProductCategoriesFood = [
   },
   {
     id: 5,
-    content: "Snacks & Sweets",
-  },
-  {
-    id: 6,
-    content: "Cold Coffees",
-  },
-  {
-    id: 7,
-    content: "Iced Teas",
-  },
-  {
-    id: 8,
-    content: "Cold Drinks",
-  },
+    content: "Snacks",
+  }
 ];
 
 const MenuProductCategoriesAtHomeCoffee = [

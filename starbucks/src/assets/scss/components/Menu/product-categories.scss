@@ -1,5 +1,5 @@
 .product-categories {
-  width: 40%;
+  width: 30%;
   .product-categories-list {
     display: flex;
     flex-direction: column;
@@ -69,8 +69,7 @@
 
 @media only screen and (max-width: 480px) {
   .product-categories {
-    width: 100%;
-    padding: 10px;
+    display: none;
 
     .product-categories-list {
       flex-direction: column;
