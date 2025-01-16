@@ -2,12 +2,24 @@
     margin-bottom: 40px;
   
     .giftcards-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+      text-align: start;
+
+      .giftcards-title {
+        font-size: 1.2rem;
+      }
       .giftcards-allcards-wrapper {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
+        text-align: start;
         gap: 20px;
+        @media (max-width: 1340px) and (min-width: 1030px) {
+          justify-content: flex-start;
+        }
   
         img {
           width: 290px;
