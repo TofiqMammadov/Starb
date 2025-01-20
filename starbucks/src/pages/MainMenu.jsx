@@ -5,8 +5,12 @@ import DetailCategories from '../components/Menu/DetailCategories'
 const MainMenu = () => {
   return (
     <>
-    <ProductCategories />
-    <DetailCategories />
+      <div className='w-[25%]'>
+        <ProductCategories />
+      </div>
+      <div className='w-[75%]'>
+        <DetailCategories />
+      </div>
     </>
   )
 }

@@ -5,8 +5,12 @@ import ProductCategories from '../components/Menu/ProductCategories'
 const MenuPage = () => {
   return (
     <>
-    <ProductCategories />
-    <MenuProduct />
+      <div className='w-[25%]'>
+        <ProductCategories />
+      </div>
+      <div className='w-[75%]'>
+        <MenuProduct />
+      </div>
     </>
   )
 }
