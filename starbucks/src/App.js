@@ -55,7 +55,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/giftcards" element={<Giftcards />} />
-            <Route path="/giftcard-detail" element={<GiftcardDetails />} />
+            <Route path="/giftcard-detail/:imgID" element={<GiftcardDetails />} />
             
             <Route
               path="/signin"

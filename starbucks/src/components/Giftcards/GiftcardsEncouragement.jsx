@@ -1,16 +1,14 @@
 import { Giftcards } from "../../database/db.js";
 
 const GiftcardsEncouragement = () => {
-  const openDetails = () => {
-    console.log("Open details");
-  }
+  
   return (
     <div className="giftcards-allcards">
       <div className="giftcards-container">
         <h2 className="giftcards-title">Encouragement</h2>
         <div className="giftcards-allcards-wrapper">
           {Giftcards.slice(28, 31).map((img, index) => (
-            <div onClick={openDetails} key={index} className="giftcard-card">
+            <div  key={index} className="giftcard-card">
             <img
               src={img.img}
               alt={`Giftcard ${index + 20}`}

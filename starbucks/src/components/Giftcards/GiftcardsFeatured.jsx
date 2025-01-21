@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -16,9 +17,7 @@ export const GiftcardsFeatured = () => {
     setIsEnd(swiper.isEnd);
   };
 
-  const openDetails = () => {
-    console.log("Open details");
-  }
+  
 
   return (
     <div className="giftcards-container px-4 lg:px-8">
@@ -45,12 +44,14 @@ export const GiftcardsFeatured = () => {
           className="mySwiper"
         >
           {Giftcards.slice(0,8).map((img, index) => (
-            <SwiperSlide key={index} onClick={openDetails} className="flex items-center justify-center">
-              <img
-                src={img.img}
-                alt={`Giftcard ${index + 1}`}
-                className="w-full h-auto object-cover rounded-md shadow-md"
-              />
+            <SwiperSlide key={index}  className="flex items-center justify-center">
+              <Link to={`/giftcard-detail/${img.id}`}>
+                <img
+                  src={img.img}
+                  alt={`Giftcard ${index + 20}`}
+                  className="w-full h-auto object-cover rounded-md shadow-md"
+                />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
