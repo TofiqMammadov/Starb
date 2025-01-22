@@ -14,7 +14,7 @@ import GiftcardsAnytime from '../components/Giftcards/GiftcardsAnytime'
 
 const AllGiftCards = () => {
     return (
-        <div>
+        <div className='giftcards-container px-4 lg:px-8 container mx-auto'>
             <GiftcardsBirthday />
             <GiftcardsThankyou />
             <GiftcardsCelebration />

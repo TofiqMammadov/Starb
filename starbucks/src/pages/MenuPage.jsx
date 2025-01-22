@@ -5,7 +5,7 @@ import ProductCategories from '../components/Menu/ProductCategories'
 const MenuPage = () => {
   return (
     <>
-      <div className='w-[25%]'>
+      <div className='w-[25%] hidden md:block'>
         <ProductCategories />
       </div>
       <div className='w-[75%]'>

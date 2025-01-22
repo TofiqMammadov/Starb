@@ -20,7 +20,7 @@ export const GiftcardsFeatured = () => {
   
 
   return (
-    <div className="giftcards-container px-4 lg:px-8">
+    <div className="giftcards-container px-4 lg:px-8 container mx-auto">
       <section className="giftcards-swiper">
         <h2 className="giftcards-title text-2xl lg:text-3xl font-semibold mb-6">
           Featured
@@ -36,7 +36,7 @@ export const GiftcardsFeatured = () => {
           slidesPerGroup={4}
           slidesPerView={4}
           breakpoints={{
-            640: { slidesPerView: 2, slidesPerGroup: 2 }, // Tablet
+            340: { slidesPerView: 2, slidesPerGroup: 2 }, // Tablet
             768: { slidesPerView: 3, slidesPerGroup: 3 }, // Small laptops
             1024: { slidesPerView: 4, slidesPerGroup: 4 }, // Desktops
           }}

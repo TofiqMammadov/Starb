@@ -18,7 +18,7 @@ const GiftcardsBulk = () => {
             </p>
             
             <Link to={"https://www.starbuckscardb2b.com/s/"} target="_blank">
-              Shop now <BiLinkExternal />{" "}
+              Shop now <BiLinkExternal />
             </Link>
           </div>
         </div>
