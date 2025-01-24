@@ -18,7 +18,7 @@ function Featured() {
               <p className="featured-title">{item.title}</p>
               <p className="featured-text">{item.text}</p>
               <button className="featured-button">
-                <Link to="#">Order now</Link>
+                <Link to={item.link}>Order now</Link>
               </button>
             </div>
           </div>

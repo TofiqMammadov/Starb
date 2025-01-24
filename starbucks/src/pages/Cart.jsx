@@ -116,7 +116,7 @@ const Cart = () => {
                     chance to review before placing your order.
                   </p>
                   <Link to={"/menu"}>
-                    <button>Add items</button>
+                    <button className="border-2">Add items</button>
                   </Link>
                 </div>
               </div>

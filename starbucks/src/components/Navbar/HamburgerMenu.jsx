@@ -66,12 +66,12 @@ function HamburgerMenu() {
               <div className="BurgerAuxiliary">
                 <div className="auxiliaryNav-item">
                   <Link to="/signin">
-                    <button className="sign-in-btn auxiliaryNav-btn">
+                    <button onClick={closeMenu} className="sign-in-btn auxiliaryNav-btn">
                       Sign in
                     </button>
                   </Link>
                   <Link to="/signup">
-                    <button className="join-now-btn auxiliaryNav-btn">
+                    <button onClick={closeMenu} className="join-now-btn auxiliaryNav-btn">
                       Join Now
                     </button>
                   </Link>

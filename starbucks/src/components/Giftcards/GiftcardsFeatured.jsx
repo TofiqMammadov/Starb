@@ -6,8 +6,6 @@ import { Navigation } from "swiper";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
 export const GiftcardsFeatured = () => {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
@@ -16,8 +14,6 @@ export const GiftcardsFeatured = () => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
   };
-
-  
 
   return (
     <div className="giftcards-container px-4 lg:px-8 container mx-auto">

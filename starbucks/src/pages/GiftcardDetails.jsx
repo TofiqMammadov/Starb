@@ -91,7 +91,7 @@ const GiftCardPage = () => {
             key={selectedCard.id}
             className="bg-white  overflow-hidden w-full mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
           >
-            <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72">
+            <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden rounded-xl">
               <img
                 src={selectedCard.img}
                 alt={`Gift Card ${selectedCard.id}`}
